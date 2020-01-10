@@ -61,7 +61,7 @@
   NSLog(@"url scheme:%@",[url scheme]);
   NSLog(@"url host:%@",[url host]);
 
-  if([[url scheme] isEqualToString:urlScheme || [url scheme] isEqualToString:urlScheme2 ]) {
+  if([[url scheme] isEqualToString:urlScheme ] || [ [url scheme] isEqualToString:urlScheme2 ] ) {
     return YES;
   }
     
