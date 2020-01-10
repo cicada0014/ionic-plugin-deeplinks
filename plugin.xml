@@ -86,6 +86,7 @@
 					<key>CFBundleURLSchemes</key>
 					<array>
 						<string>$URL_SCHEME</string>
+						<string>$URL_SCHEME2</string>
 					</array>
 				</dict>
 			</array>
