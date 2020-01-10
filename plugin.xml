@@ -75,7 +75,7 @@
 				<param name="ios-package" value="IonicDeeplinkPlugin" onload="true" />
 			</feature>
 			<preference name="URL_SCHEME" value="$URL_SCHEME" />
-			<preference name="URL_SCHEME2" value="kakao$KAKAO_APP_KEY" />
+			<preference name="URL_SCHEME2" value="$URL_SCHEME_2" />
 			<preference name="DEEPLINK_SCHEME" value="$DEEPLINK_SCHEME" />
 			<preference name="DEEPLINK_HOST" value="$DEEPLINK_HOST" />
 		</config-file>
@@ -86,7 +86,7 @@
 					<key>CFBundleURLSchemes</key>
 					<array>
 						<string>$URL_SCHEME</string>
-						<string>kakao$KAKAO_APP_KEY</string>
+						<string>$URL_SCHEME_2</string>
 					</array>
 				</dict>
 			</array>
