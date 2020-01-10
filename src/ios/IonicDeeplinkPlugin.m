@@ -56,6 +56,8 @@
   NSString* urlScheme2 = [[self.commandDelegate settings] objectForKey:@"url_2_scheme"];  
     
   // url 스키마에서 카카오용을 하나 더 추가한다. 이는 url_scheme2로 명명한다.
+  // 만약 필요하다면 모든 스키마에 대해서 일단 들어오게 하는 방법도 있을 것이다. 일단은 이렇게 해두지만... 나중에 필요하면 열어두도록하자
+  // 버전이 바뀜에 따라서 룰이 바뀌는 경우도 있어서 이대로 고정해두자 
   if(urlScheme == nil && urlScheme2 == nil ) return NO;
     
   NSLog(@"url scheme:%@",[url scheme]);
