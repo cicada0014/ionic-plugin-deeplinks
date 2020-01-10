@@ -46,7 +46,7 @@ var IonicDeeplink = {
       var matched = false;
       var finalArgs;
       var pathData;
-
+      console.log('checking paths', paths)
       for (var targetPath in paths) {
         pathData = paths[targetPath];
 
