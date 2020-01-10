@@ -120,6 +120,9 @@ var IonicDeeplink = {
    * Check if the path matches the route.
    */
   routeMatch: function (route, path) {
+    console.log('incomm route', route)
+    console.log('incomm path', path)
+
     if (route === path) {
       return {};
     }
@@ -165,10 +168,10 @@ var IonicDeeplink = {
       q = q.slice(qIndex + 1);
     }
 
-    var i 			= 0,
-      retObj 	= {},
-      pair 		= null,
-      qArr 		= q.split('&');
+    var i = 0,
+      retObj = {},
+      pair = null,
+      qArr = q.split('&');
 
     for (; i < qArr.length; i++) {
       if (!qArr[i]) {
