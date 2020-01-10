@@ -53,15 +53,18 @@
   if(url == nil) return NO;
     
   NSString* urlScheme = [[self.commandDelegate settings] objectForKey:@"url_scheme"];
+  NSString* urlScheme2 = [[self.commandDelegate settings] objectForKey:@"url_scheme2"];  
     
-  if(urlScheme == nil) return NO;
+  // url 스키마에서 카카오용을 하나 더 추가한다. 이는 url_scheme2로 명명한다.
+  if(urlScheme == nil && urlScheme2 == nil ) return NO;
     
   NSLog(@"url scheme:%@",[url scheme]);
   NSLog(@"url host:%@",[url host]);
 
-  if([[url scheme] isEqualToString:urlScheme]) {
+  if([[url scheme] isEqualToString:urlScheme || [url scheme] isEqualToString:urlScheme2 ]) {
     return YES;
   }
+    
     
   NSString* deeplinkScheme = [[self.commandDelegate settings] objectForKey:@"deeplink_scheme"];
   NSString* deeplinkHost = [[self.commandDelegate settings] objectForKey:@"deeplink_host"];
