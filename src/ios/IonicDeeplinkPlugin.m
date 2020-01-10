@@ -59,6 +59,8 @@
   if(urlScheme == nil && urlScheme2 == nil ) return NO;
     
   NSLog(@"url scheme:%@",[url scheme]);
+  NSLog(@"target url scheme1:%@",urlScheme);
+  NSLog(@"target url scheme2:%@",urlScheme2);
   NSLog(@"url host:%@",[url host]);
 
   if([[url scheme] isEqualToString:urlScheme ] || [ [url scheme] isEqualToString:urlScheme2 ] ) {
